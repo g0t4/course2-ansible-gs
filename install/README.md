@@ -23,10 +23,10 @@ pip3 install --user ansible
 ```bash
 # 3. install into explicit venv
 python3 -m venv .venv
-source .venv/bin/activate # must run in new shell
-pip --version # ensure activated! look at `from`
+source .venv/bin/activate # must run in each new shell, easy to forget
 pip install ansible 
 ```
+
 - `pip` => `.venv/bin/pip`
 - `ansible(-*)` => `.venv/bin/ansible(-*)` 
 - [`venv` docs](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
