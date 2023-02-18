@@ -35,7 +35,11 @@ pip install ansible
 # 4. install into implicit venv (pipx managed)
 pipx install --include-deps ansible
 ```
-- without `--include-deps` you'll only see `ansible-community` command, ansible-core has most `ansible(-*)` commands and is a dep of `ansible` package (hence `--include-deps`)
+- Without `--include-deps` you'll only see the `ansible-community` command
+  - Ansible is split into two packages: `ansible` + `ansible-core`. `ansible` depends on `ansible-core`
+  - `ansible` package only has the `ansible-community` command
+  - `ansible-core` has the rest of the `ansible(-*)` commands 
+  - `--include-deps` tells `pipx` to install commands from `ansible-core` too (all dependencies actually)
 - [`pipx` docs](https://pypa.github.io/pipx/) 
 
 ## I have multiple python installs...
