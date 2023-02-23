@@ -1,6 +1,6 @@
 # How to install ansible?
 
-There is no "right way." Pick what is familiar and works (i.e. to learn):
+There is no "right way." Pick what is familiar and works (i.e. to learn)... _Note: most of these techniques apply to installing any python package_.
 
 ## I want simple...
 
