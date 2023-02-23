@@ -56,6 +56,9 @@ pip3 --python /path/to/python3 install [--user] ansible
 python3 -m pip install [--user] ansible
 ```
 
+## I'd rather use my OS package manager...
+- See the [Ansible distro install docs for commands to copy/paste](https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html)
+
 ## Validate ansible works
 ```sh
 ansible --version
