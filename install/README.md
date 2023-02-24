@@ -4,7 +4,7 @@ There is no "right way." Pick what is familiar and works (i.e. to learn)... _Not
 
 ## I want simple...
 
-#### 1. global install into site-packages
+#### 1. install into global site-packages
 ```bash
 pip3 install ansible
 ```
@@ -12,12 +12,18 @@ pip3 install ansible
 - conflict with installed packages? try `venv`
 
 #### 2. install into user site
-```bash
+```sh
 pip3 install --user ansible
 ```
-- [user site (PEP 370)](https://peps.python.org/pep-0370/)
 - check pip output for
   _WARNING: The scripts ... are installed in '/path/to/bin' which is not on PATH_
+  - Fix by running one of these:
+    ```sh
+    PATH="/path/to/bin:${PATH}" # check first (versus current path directories)
+    PATH="${PATH}:/path/to/bin" # OR, check last
+    ```
+    - Add to shell startup files: i.e. ~/.zprofile (zsh) or ~/.bash_profile:
+- user site: [docs](https://packaging.python.org/en/latest/tutorials/installing-packages/#installing-to-the-user-site) / [PEP 370](https://peps.python.org/pep-0370/)
 
 ## I want to isolate my ansible installation...
 
@@ -29,7 +35,8 @@ pip install ansible
 ```
 - FYI `pip` => `.venv/bin/pip`
   - `ansible(-*)` => `.venv/bin/ansible(-*)` 
-- [`venv` docs](https://docs.python.org/3/library/venv.html#creating-virtual-environments)
+- `venv`: [docs](https://docs.python.org/3/library/venv.html) / [PEP 405](https://peps.python.org/pep-0405) / [rationale](https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-virtual-environments)
+  - FYI if you're curious... [PEP 704 - Proposal - default pip to require using venv(s)](https://peps.python.org/pep-0704/)
 
 #### 4. install into an implicit venv (pipx managed)
 ```bash
@@ -40,7 +47,8 @@ pipx install --include-deps ansible
   - `ansible` package only has the `ansible-community` command
   - `ansible-core` has the rest of the `ansible(-*)` commands 
   - `--include-deps` tells `pipx` to install commands from `ansible-core` too (all dependencies actually)
-- [`pipx` docs](https://pypa.github.io/pipx/) 
+- [installing standalone commands](https://packaging.python.org/en/latest/guides/installing-stand-alone-command-line-tools)
+- [`pipx` docs](https://pypa.github.io/pipx)
 
 ## I have multiple python installs...
 
