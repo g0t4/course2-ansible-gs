@@ -15,6 +15,7 @@ pip3 install ansible
 ```bash
 pip3 install --user ansible
 ```
+- [user site (PEP 370)](https://peps.python.org/pep-0370/)
 - check pip output for
   _WARNING: The scripts ... are installed in '/path/to/bin' which is not on PATH_
 
