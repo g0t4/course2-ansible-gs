@@ -25,6 +25,14 @@ pip3 install --user ansible
     - Add to shell startup files: i.e. ~/.zprofile (zsh) or ~/.bash_profile:
 - user site: [docs](https://packaging.python.org/en/latest/tutorials/installing-packages/#installing-to-the-user-site) / [PEP 370](https://peps.python.org/pep-0370/)
 
+## I'd rather use my OS package manager...
+
+- See the [Ansible distro install docs for commands to copy/paste](https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html)
+- On macOS, homebrew installs ansible with `pip` into a `virtual environment`, transparently.
+```sh
+brew install ansible
+```
+
 ## I want to isolate my ansible installation...
 
 #### 3. install into an explicit venv (virtual environment)
@@ -63,14 +71,6 @@ pip3 --python /path/to/python3 install [--user] ansible
 #### 6. use desired interpreter to run pip
 ```bash
 python3 -m pip install [--user] ansible
-```
-
-## I'd rather use my OS package manager...
-
-- See the [Ansible distro install docs for commands to copy/paste](https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html)
-- On macOS, homebrew installs ansible with `pip` into a `virtual environment`, transparently.
-```sh
-brew install ansible
 ```
 
 ## Validate ansible works
