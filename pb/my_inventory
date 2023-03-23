@@ -1,0 +1,4 @@
+# single host
+pi1
+# range of hosts:
+pi[2:5]
