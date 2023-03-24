@@ -4,3 +4,4 @@
   hosts: localhost
   tasks:
   - copy: dest=hello content=world
+  - command: date
