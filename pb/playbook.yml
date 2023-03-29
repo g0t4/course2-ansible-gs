@@ -1,4 +1,15 @@
 - name: install nginx
+  hosts: localhost
+  tags: macos
+  tasks:
+  - name: ensure accent color is pink (6)
+    community.general.osx_defaults:
+      domain: NSGlobalDomain
+      key: AppleAccentColor
+      type: integer
+      value: 6
+
+- name: install nginx
   hosts: pi3
   tags: nginx
   diff: true
