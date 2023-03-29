@@ -1,5 +1,5 @@
 - name: configure macos settings
-  hosts: all
+  hosts: all,localhost
   tags: macos
   tasks:
   - name: dump some facts
