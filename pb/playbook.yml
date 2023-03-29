@@ -1,5 +1,12 @@
 # ansible -m copy -a "dest=hello content=world" localhost --check --diff
 
+- name: install nginx
+  hosts: pi3
+  tasks:
+    - ansible.builtin.apt:
+        name: nginx
+        
+
 - name: copy module test
   hosts: localhost
   tasks:
