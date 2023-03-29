@@ -1,4 +1,4 @@
-- name: install nginx
+- name: configure macos settings
   hosts: localhost
   tags: macos
   tasks:
@@ -8,6 +8,7 @@
       key: AppleAccentColor
       type: integer
       value: 6
+
 
 - name: install nginx
   hosts: pi3
