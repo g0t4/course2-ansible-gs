@@ -3,6 +3,7 @@
 - name: install nginx
   hosts: pi3
   tags: nginx
+  diff: true
   tasks:
     - ansible.builtin.apt:
         name: nginx
