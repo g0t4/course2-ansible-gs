@@ -2,8 +2,10 @@
   hosts: pi3
   tags: nginx
   diff: true
+  become: true
   tasks:
     - ansible.builtin.apt:
+        update_cache: true
         name: nginx
 
 - name: copy module test
