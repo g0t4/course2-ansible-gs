@@ -2,6 +2,9 @@
   hosts: all
   tags: macos
   tasks:
+  - name: dump some facts
+    ansible.builtin.debug:
+      var: ansible_distribution
   - name: ensure accent color is pink (6)
     community.general.osx_defaults:
       domain: NSGlobalDomain
