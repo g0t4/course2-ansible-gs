@@ -4,7 +4,6 @@
   hosts: pi3
   tags: nginx
   diff: true
-  check_mode: true
   tasks:
     - ansible.builtin.apt:
         name: nginx
