@@ -8,3 +8,11 @@
       content: world
       src: 
   - command: date
+
+# ansible -m pip -a "name=argcomplete" localhost
+- name: controller requirements
+  hosts: localhost
+  tasks:
+  - name: install ansible-lint
+    pip:
+      name: ansible-lint
