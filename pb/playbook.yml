@@ -11,6 +11,8 @@
       key: AppleAccentColor
       type: integer
       value: 2
+    when: ansible_distribution == "MacOSX"
+
 
 
 - name: install nginx
