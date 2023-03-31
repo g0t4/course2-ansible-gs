@@ -24,6 +24,9 @@
     - ansible.builtin.apt:
         update_cache: true
         name: nginx
+    - ansible.builtin.copy:
+        src: my_app.html
+        dest: /var/www/html/index.html
 
 - name: copy module test
   hosts: localhost
