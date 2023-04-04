@@ -13,6 +13,7 @@
 
 - [github `rst` files](https://github.com/ansible/ansible/tree/devel/docs/docsite/rst/roadmap)
 - [`core` roadmap docs](https://docs.ansible.com/ansible/devel/roadmap/ansible_core_roadmap_index.html)
+    - *** short
 - [`community package` roadmap docs](https://docs.ansible.com/ansible/devel/roadmap/ansible_roadmap_index.html)
 
 ## release cycle
