@@ -4,16 +4,15 @@
   hosts: localhost
   tags: prereqs
   tasks:
-  - ansible.builtin.pip:
-      name: requests
+    - ansible.builtin.pip:
+        name: requests
 
 - name: create containers to use as ansible managed nodes
   hosts: localhost
   tasks:
-  - community.docker.docker_container:
-      name: c1
-      image: python
-      # keep running in background:
-      tty: true
-      interactive: true
-      
+    - community.docker.docker_container:
+        name: c1
+        image: python
+        # keep running in background:
+        tty: true
+        interactive: true
