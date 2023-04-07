@@ -1,5 +1,12 @@
 # docker container run --name c1 -it --detach python
 
+- name: pre-reqs for community.docker
+  hosts: localhost
+  tags: prereqs
+  tasks:
+  - ansible.builtin.pip:
+      name: requests
+
 - name: create containers to use as ansible managed nodes
   hosts: localhost
   tasks:
