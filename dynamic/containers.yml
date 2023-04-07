@@ -16,3 +16,7 @@
         # keep running in background:
         tty: true
         interactive: true
+    - community.docker.docker_container:
+        name: sleeper
+        image: python:3.6
+        command: sleep infinity
