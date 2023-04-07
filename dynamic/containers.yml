@@ -11,11 +11,14 @@
   hosts: localhost
   tasks:
     - community.docker.docker_container:
-        name: c1
+        name: "{{ item }}"
         image: python
         # keep running in background:
         tty: true
         interactive: true
+      loop:
+        - c1
+        - c2
     - community.docker.docker_container:
         name: sleeper
         image: python:3.6
