@@ -1,0 +1,12 @@
+# docker container run --name c1 -it --detach python
+
+- name: create containers to use as ansible managed nodes
+  hosts: localhost
+  tasks:
+  - community.docker.docker_container:
+      name: c1
+      image: python
+      # keep running in background:
+      tty: true
+      interactive: true
+      
