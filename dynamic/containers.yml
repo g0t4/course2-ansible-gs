@@ -16,7 +16,7 @@
         # keep running in background:
         tty: true
         interactive: true
-      loop: "{{ range(1,4) }}"
+      loop: "{{ range(1,10) }}"
     - community.docker.docker_container:
         name: sleeper
         image: python:3.6
