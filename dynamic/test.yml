@@ -1,0 +1,4 @@
+- name: test docker inventory
+  hosts: all
+  tasks:
+    - ping:
