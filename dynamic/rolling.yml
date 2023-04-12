@@ -1,5 +1,6 @@
 - name: play1
   hosts: all
+  serial: 3
   tasks:
     - name: copy files
       command: sleep 1
