@@ -1,0 +1,15 @@
+- name: play1
+  hosts: all
+  tasks:
+    - name: copy files
+      command: sleep 1
+    - name: configure web app
+      command: sleep 1
+
+# - name: play2
+#   hosts: all
+#   tasks:
+#     - name: clear caches
+#       command: sleep 1
+
+# https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_strategies.html
