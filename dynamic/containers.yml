@@ -9,6 +9,10 @@
 
 - name: create containers to use as ansible managed nodes
   hosts: localhost
+  module_defaults:
+    community.docker.docker_container:
+      force_kill: true
+      state: absent
   tasks:
     - community.docker.docker_container:
         name: "c{{ item }}"
@@ -16,8 +20,6 @@
         # keep running in background:
         tty: true
         interactive: true
-        state: absent
-        force_kill: true
       loop: "{{ range(1,10) }}"
     - community.docker.docker_container:
         name: sleeper
