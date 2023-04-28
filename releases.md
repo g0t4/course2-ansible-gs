@@ -1,5 +1,6 @@
 ## notes
 
+- Resources to keep up with changes.
 - Sections that I mark with `***` below are the ones I find most useful.
 - FYI, for all `docs.ansible.com` links, switch to `devel` branch (not `latest`) to get the most recent roadmap, changelogs, porting guides, etc
 - general [release docs](https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html)
