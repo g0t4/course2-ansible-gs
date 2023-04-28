@@ -1,0 +1,4 @@
+{
+  // change zoom level of course repos so the font size is always legible in demos
+  "window.zoomLevel": 4
+}
