@@ -1,4 +1,4 @@
-## notes
+# Releases
 
 - Resources to keep up with changes.
 - Sections that I mark with `***` below are the ones I find most useful.
