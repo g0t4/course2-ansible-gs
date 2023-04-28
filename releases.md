@@ -1,8 +1,8 @@
 ## notes
 
 - Sections that I mark with `***` below are the ones I find most useful.
-- [release docs](https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html)
-- \*\*\* for `docs.ansible.com` links, switch to `devel` branch (not `latest`) to get the most recent roadmap, changelogs, porting guides, etc
+- FYI, for all `docs.ansible.com` links, switch to `devel` branch (not `latest`) to get the most recent roadmap, changelogs, porting guides, etc
+- general [release docs](https://docs.ansible.com/ansible/devel/reference_appendices/release_and_maintenance.html)
 
 ## porting guides
 
